@@ -17,7 +17,7 @@ class Sweepstake extends Model
         'description'
     ];
 
-    protected $incrementing = false;
+    public $incrementing = false;
     protected $keyType = 'string';
 
     public static function boot()
@@ -34,5 +34,10 @@ class Sweepstake extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+
+    public function participants()
+    {
+        return $this->hasMany(Participant::class);
     }
 }
