@@ -15,26 +15,26 @@
     @endif
 
     <div class="flex flex-col gap-1">
-        <label for="name" class="block text-sm font-medium text-white">Nome</label>
-        <input value="{{ old('name') }}" type="text" name="name" id="name" class="p-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Digite seu nome">
+        <label for="name" class="block text-sm font-medium text-black">Nome</label>
+        <input value="{{ old('name') }}" type="text" name="name" id="name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Digite seu nome">
     </div>
 
     <div class="flex flex-col gap-1">
-        <label for="email" class="block text-sm font-medium text-white">E-mail</label>
-        <input value="{{ old('email') }}" type="email" name="email" id="email" class="p-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Digite seu e-mail">
+        <label for="email" class="block text-sm font-medium text-black">E-mail</label>
+        <input value="{{ old('email') }}" type="email" name="email" id="email" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Digite seu e-mail">
     </div>
 
     <div class="flex flex-col gap-1">
-        <label for="password" class="block text-sm font-medium text-white">Senha</label>
-        <input type="password" name="password" id="password" class="p-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Sua senha">
+        <label for="password" class="block text-sm font-medium text-black">Senha</label>
+        <input type="password" name="password" id="password" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Sua senha">
     </div>
 
     <div class="flex flex-col gap-1">
-        <label for="password_confirmation" class="block text-sm font-medium text-white">Confirme a Senha</label>
-        <input type="password" name="password_confirmation" id="password_confirmation" class="p-2 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Confirme a Senha">
+        <label for="password_confirmation" class="block text-sm font-medium text-black">Confirme a Senha</label>
+        <input type="password" name="password_confirmation" id="password_confirmation" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Confirme a Senha">
     </div>
 
-    <button class="p-2 bg-white text-black w-full rounded-lg">Login</button>
+    <button class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Cadastrar</button>
 </form>
 
 @endsection
